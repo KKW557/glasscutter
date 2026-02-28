@@ -6,3 +6,5 @@ actually destroying the blocks containing the following tags at a mining speed o
 
 * `#c:glass_blocks`
 * `#c:glass_panes`
+
+can enchant `minecraft:silk_touch` to obtain drops

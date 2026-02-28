@@ -12,11 +12,11 @@ class Main : ModInitializer {
 
     private fun initialize() {
         GLASSWORK
-        GLASS_CUTTER
+        GLASSCUTTER
     }
 
     private fun registerEvents() {
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
-            .register { g -> g.accept { GLASS_CUTTER } }
+            .register { group -> group.accept { GLASSCUTTER } }
     }
 }
