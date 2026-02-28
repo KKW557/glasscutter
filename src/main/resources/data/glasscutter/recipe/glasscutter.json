@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": "minecraft:copper_ingot",
+    "I": "minecraft:stick",
+    "X": "minecraft:diamond"
+  },
+  "pattern": [
+    "X",
+    "#",
+    "I"
+  ],
+  "result": {
+    "count": 1,
+    "id": "glasscutter:glasscutter"
+  }
+}
