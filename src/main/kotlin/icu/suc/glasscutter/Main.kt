@@ -7,13 +7,16 @@ import net.minecraft.world.item.CreativeModeTabs
 class Main : ModInitializer {
     override fun onInitialize() {
         initialize()
-
-        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
-            .register { g -> g.accept { GLASS_CUTTER } }
+        registerEvents()
     }
 
     private fun initialize() {
         GLASSWORK
         GLASS_CUTTER
+    }
+
+    private fun registerEvents() {
+        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
+            .register { g -> g.accept { GLASS_CUTTER } }
     }
 }
