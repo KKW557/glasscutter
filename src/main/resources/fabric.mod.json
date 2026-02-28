@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "glasscutter",
+  "version": "${version}",
+  "name": "Glass Cutter",
+  "description": "A tool for cutting glass.",
+  "authors": [
+    "557"
+  ],
+  "contact": {
+    "sources": "https://github.com/KKW557/glasscutter",
+    "issues": "https://github.com/KKW557/glasscutter/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/glasscutter/textures/item/glasscutter.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "icu.suc.glasscutter.Main"
+      }
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader}",
+    "fabric-language-kotlin": ">=${kotlin}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft}"
+  }
+}
