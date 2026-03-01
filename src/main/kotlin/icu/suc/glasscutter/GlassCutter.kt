@@ -27,14 +27,16 @@ val GLASSCUTTER: Item = Items.registerItem(
     )
 ) { properties ->
     Item(
-        properties.durability(1486)
+        properties
+            .durability(1486)
             .component(
                 DataComponents.TOOL,
                 Tool(
                     listOf(
                         Tool.Rule.minesAndDrops(
-                            BuiltInRegistries.acquireBootstrapRegistrationLookup(BuiltInRegistries.BLOCK)
-                                .getOrThrow(GLASSWORK), 1024.0F
+                            BuiltInRegistries.acquireBootstrapRegistrationLookup(
+                                BuiltInRegistries.BLOCK
+                            ).getOrThrow(GLASSWORK), 1024.0F
                         )
                     ), 1.0F, 1, true
                 )
