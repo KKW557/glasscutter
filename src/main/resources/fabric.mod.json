@@ -9,7 +9,8 @@
   ],
   "contact": {
     "sources": "https://github.com/KKW557/glasscutter",
-    "issues": "https://github.com/KKW557/glasscutter/issues"
+    "issues": "https://github.com/KKW557/glasscutter/issues",
+    "homepage": "https://modrinth.com/mod/glasscuttermod"
   },
   "license": "MIT",
   "icon": "assets/glasscutter/textures/item/glasscutter.png",
