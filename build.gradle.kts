@@ -25,7 +25,6 @@ loom {
     mods {
         register("glasscutter") {
             sourceSet("main")
-            sourceSet("client")
         }
     }
 }
