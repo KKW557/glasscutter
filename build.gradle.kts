@@ -6,7 +6,7 @@ plugins {
     alias(libs.plugins.fabric.loom)
 }
 
-version = "2026.3.1"
+version = "2026.3.2"
 group = "icu.suc"
 
 base {
