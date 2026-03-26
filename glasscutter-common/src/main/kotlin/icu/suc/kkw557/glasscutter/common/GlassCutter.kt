@@ -12,7 +12,7 @@ import net.minecraft.world.item.Item
 import net.minecraft.world.item.Items
 import net.minecraft.world.item.component.Tool
 
-const val MOD_ID = "assets/glasscutter"
+const val MOD_ID = "glasscutter"
 
 fun identifier(path: String): ResourceLocation = ResourceLocation.fromNamespaceAndPath(MOD_ID, path)
 
