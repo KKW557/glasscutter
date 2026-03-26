@@ -8,3 +8,8 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
+include(
+    "glasscutter-common",
+    "glasscutter-fabric"
+)

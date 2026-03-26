@@ -13,20 +13,20 @@
     "homepage": "https://modrinth.com/mod/glasscuttermod"
   },
   "license": "MIT",
-  "icon": "assets/glasscutter/textures/item/glasscutter.png",
+  "icon": "pack.png",
   "environment": "*",
   "entrypoints": {
     "main": [
       {
         "adapter": "kotlin",
-        "value": "icu.suc.glasscutter.Main"
+        "value": "icu.suc.kkw557.glasscutter.fabric.Main"
       }
     ]
   },
   "depends": {
     "fabricloader": ">=${loader}",
-    "fabric-language-kotlin": ">=${kotlin}",
+    "fabric-language-kotlin": "*",
     "fabric-api": "*",
-    "minecraft": "${minecraft}"
+    "minecraft": ">=${minecraft}"
   }
 }

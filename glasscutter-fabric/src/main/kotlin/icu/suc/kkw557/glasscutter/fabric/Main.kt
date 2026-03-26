@@ -1,22 +1,20 @@
-package icu.suc.glasscutter
+package icu.suc.kkw557.glasscutter.fabric
 
+import icu.suc.kkw557.glasscutter.common.Items
+import icu.suc.kkw557.glasscutter.common.Tags
 import net.fabricmc.api.ModInitializer
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
 import net.minecraft.world.item.CreativeModeTabs
 
 class Main : ModInitializer {
     override fun onInitialize() {
-        initialize()
+        Items.register()
+        Tags.register()
         registerEvents()
-    }
-
-    private fun initialize() {
-        GLASSWORK
-        GLASSCUTTER
     }
 
     private fun registerEvents() {
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
-            .register { group -> group.accept { GLASSCUTTER } }
+            .register { group -> group.accept { Items.GLASSCUTTER } }
     }
 }
