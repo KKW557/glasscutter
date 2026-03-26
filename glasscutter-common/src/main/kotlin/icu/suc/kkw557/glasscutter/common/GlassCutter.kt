@@ -12,7 +12,7 @@ import net.minecraft.tags.TagKey
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.component.Tool
 
-const val MOD_ID = "assets/glasscutter"
+const val MOD_ID = "glasscutter"
 
 fun identifier(path: String): Identifier = Identifier.fromNamespaceAndPath(MOD_ID, path)
 
@@ -74,7 +74,6 @@ object Tags {
 
         @JvmStatic
         fun register() {
-
         }
     }
 
