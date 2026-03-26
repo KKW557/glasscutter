@@ -2,28 +2,23 @@
 
 package icu.suc.kkw557.glasscutter.common
 
+import net.minecraft.core.Registry
 import net.minecraft.core.component.DataComponents
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.core.registries.Registries
+import net.minecraft.resources.Identifier
 import net.minecraft.resources.ResourceKey
-import net.minecraft.resources.ResourceLocation
 import net.minecraft.tags.TagKey
 import net.minecraft.world.item.Item
-import net.minecraft.world.item.Items
 import net.minecraft.world.item.component.Tool
 
 const val MOD_ID = "assets/glasscutter"
 
-fun identifier(path: String): ResourceLocation = ResourceLocation.fromNamespaceAndPath(MOD_ID, path)
+fun identifier(path: String): Identifier = Identifier.fromNamespaceAndPath(MOD_ID, path)
 
 object Items {
     @JvmField
-    val GLASSCUTTER: Item = Items.registerItem(
-        ResourceKey.create(
-            Registries.ITEM,
-            identifier("assets/glasscutter")
-        )
-    ) { properties ->
+    val GLASSCUTTER = register("glasscutter") { properties ->
         Item(
             properties.durability(1486).component(
                 DataComponents.TOOL,
@@ -37,6 +32,30 @@ object Items {
                     ), 1.0F, 1, true
                 )
             )
+        )
+    }
+
+    @JvmStatic
+    fun <T : Item> register(id: String, function: (Item.Properties) -> T) = register(id, function, Item.Properties())
+
+    @JvmStatic
+    fun <T : Item> register(
+        id: String,
+        function: (Item.Properties) -> T,
+        properties: Item.Properties
+    ) = register(identifier(id), function, properties)
+
+    @JvmStatic
+    fun <T : Item> register(
+        id: Identifier,
+        function: (Item.Properties) -> T,
+        properties: Item.Properties
+    ): T {
+        val key = ResourceKey.create(Registries.ITEM, id)
+        return Registry.register(
+            BuiltInRegistries.ITEM,
+            key,
+            function(properties.setId(key))
         )
     }
 
