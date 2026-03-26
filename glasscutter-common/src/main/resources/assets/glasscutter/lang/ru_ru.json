@@ -1,5 +1,6 @@
 {
   "item.glasscutter.glasscutter": "Стеклорез",
   "tag.item.c.tools.glasscutter": "Glass Cutters",
-  "tag.block.glasscutter.glasswork": "Glassworks"
+  "tag.block.glasscutter.glasswork": "Glassworks",
+  "tag.item.glasscutter.glasswork": "Glassworks"
 }
