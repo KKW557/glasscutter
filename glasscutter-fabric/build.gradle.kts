@@ -12,8 +12,6 @@ dependencies {
 }
 
 tasks.processResources {
-    from(project(":glasscutter-common").fileTree("src/main/resources"))
-
     filteringCharset = "UTF-8"
 
     inputs.property("version", project.version)
