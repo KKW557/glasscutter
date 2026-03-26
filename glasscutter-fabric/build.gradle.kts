@@ -12,6 +12,19 @@ dependencies {
     implementation(project(":glasscutter-common"))
 }
 
+loom {
+    sourceSets {
+        main {
+            kotlin {
+                srcDir(project(":glasscutter-common").sourceSets.main.get().kotlin.srcDirs)
+            }
+            resources {
+                srcDir(project(":glasscutter-common").sourceSets.main.get().resources.srcDirs)
+            }
+        }
+    }
+}
+
 tasks.processResources {
     filteringCharset = "UTF-8"
 
@@ -26,12 +39,4 @@ tasks.processResources {
             "loader" to libs.versions.fabric.loader.get()
         )
     }
-}
-
-tasks.jar {
-    from(project(":glasscutter-common").sourceSets.main.get().output)
-}
-
-tasks.sourcesJar {
-    from(project(":glasscutter-common").sourceSets.main.get().allSource)
 }
