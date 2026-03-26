@@ -1,3 +1,5 @@
 {
-  "item.glasscutter.glasscutter": "Glassnijder"
+  "item.glasscutter.glasscutter": "Glassnijder",
+  "tag.item.c.tools.glasscutter": "Glass Cutters",
+  "tag.block.glasscutter.glasswork": "Glassworks"
 }
