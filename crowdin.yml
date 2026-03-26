@@ -3,4 +3,3 @@ preserve_hierarchy: 1
 files:
   - source: glasscutter-common/src/main/resources/assets/glasscutter/lang/en_us.json
     translation: /./glasscutter-common/src/main/resources/assets/glasscutter/lang/%locale_with_underscore%.json
-    multilingual: 1
