@@ -1,9 +1,9 @@
-subprojects {
-    plugins.withId("java") {
-        extensions.configure<BasePluginExtension> {
-            archivesName.set("${project.name}+${libs.versions.minecraft.get()}")
-        }
+val minecraft = libs.versions.minecraft.get()
 
+subprojects {
+    project.version = "${project.version}+${minecraft}"
+
+    plugins.withId("java") {
         extensions.configure<JavaPluginExtension> {
             toolchain.languageVersion = JavaLanguageVersion.of(21)
             withSourcesJar()

@@ -2,15 +2,17 @@ name: Crowdin Action
 
 on:
   push:
-    branches: [ main ]
-
-permissions:
-  contents: write
-  pull-requests: write
+    branches: [ * ]
 
 jobs:
   synchronize-with-crowdin:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pull-requests: write
 
     steps:
       - name: Checkout
