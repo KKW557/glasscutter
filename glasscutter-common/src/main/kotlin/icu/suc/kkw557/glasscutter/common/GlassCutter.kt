@@ -21,7 +21,7 @@ object Items {
     val GLASSCUTTER: Item = Items.registerItem(
         ResourceKey.create(
             Registries.ITEM,
-            identifier("assets/glasscutter")
+            identifier("glasscutter")
         )
     ) { properties ->
         Item(
