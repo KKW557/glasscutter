@@ -1,21 +1,6 @@
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
-plugins {
-    alias(libs.plugins.kotlin)
-}
-
-repositories {
-    gradlePluginPortal()
-}
-
 val minecraft = libs.versions.minecraft.get()
 
-val targetJavaVersion = 25
-
-tasks.withType<KotlinCompile>().configureEach {
-    compilerOptions.jvmTarget.set(JvmTarget.fromTarget(targetJavaVersion.toString()))
-}
+val targetJavaVersion = 21
 
 subprojects {
     project.version = "${project.version}+${minecraft}"
