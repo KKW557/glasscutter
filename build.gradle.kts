@@ -1,12 +1,19 @@
 val minecraft = libs.versions.minecraft.get()
 
+val targetJavaVersion = 25
+
 subprojects {
     project.version = "${project.version}+${minecraft}"
 
     plugins.withId("java") {
         extensions.configure<JavaPluginExtension> {
-            toolchain.languageVersion = JavaLanguageVersion.of(21)
+            toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
             withSourcesJar()
+        }
+
+        tasks.withType<JavaCompile>().configureEach {
+            options.encoding = "UTF-8"
+            options.release.set(targetJavaVersion)
         }
 
         tasks.withType<Jar>().configureEach {
