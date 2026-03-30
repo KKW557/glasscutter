@@ -1,10 +1,10 @@
 # Glass Cutter
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/KKW557/glasscutter/gradle.yml)
-![Crowdin](https://badges.crowdin.net/glasscuttermod/localized.svg)
-![GitHub Release](https://img.shields.io/github/v/release/KKW557/glasscutter)
-![Modrinth Downloads](https://img.shields.io/modrinth/dt/glasscuttermod?logo=modrinth)
-![CurseForge Downloads](https://img.shields.io/curseforge/dt/1499406?logo=curseforge)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/KKW557/glasscutter/gradle.yml)](https://github.com/KKW557/glasscutter/actions/workflows/gradle.yml)
+[![Crowdin](https://badges.crowdin.net/glasscuttermod/localized.svg)](https://crowdin.com/project/glasscuttermod)
+[![GitHub Release](https://img.shields.io/github/v/release/KKW557/glasscutter)](https://github.com/KKW557/glasscutter/releases/latest)
+[![Modrinth Downloads](https://img.shields.io/modrinth/dt/glasscuttermod?logo=modrinth)](https://modrinth.com/mod/glasscuttermod)
+[![CurseForge Downloads](https://img.shields.io/curseforge/dt/1499406?logo=curseforge)](https://www.curseforge.com/minecraft/mc-mods/glasscuttermod)
 
 Instantly destroy all glass blocks.
 
