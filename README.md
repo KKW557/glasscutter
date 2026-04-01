@@ -1,7 +1,7 @@
 # Glass Cutter
 
 [![GitHub License](https://img.shields.io/github/license/KKW557/glasscutter)](https://github.com/KKW557/glasscutter?tab=MIT-1-ov-file#readme)
-[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/KKW557/glasscutter/gradle.yml)](https://github.com/KKW557/glasscutter/actions/workflows/gradle.yml)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/KKW557/glasscutter/build.yml)](https://github.com/KKW557/glasscutter/actions/workflows/build.yml)
 [![GitHub Release](https://img.shields.io/github/v/release/KKW557/glasscutter)](https://github.com/KKW557/glasscutter/releases/latest)
 
 [![Crowdin](https://badges.crowdin.net/glasscuttermod/localized.svg)](https://crowdin.com/project/glasscuttermod)
