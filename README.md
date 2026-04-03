@@ -21,4 +21,4 @@ Can be enchanted `minecraft:silk_touch` to get drops.
 
 ## License
 
-This project is licensed under the [MIT](LICENSE) © 2025 557.
+This project is licensed under the [MIT License](LICENSE) © 2025 557.
