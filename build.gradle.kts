@@ -22,7 +22,7 @@ subprojects {
             }
         }
 
-        apply(plugin = "maven-publish")
+        plugins.apply("maven-publish")
         extensions.configure<PublishingExtension> {
             publications {
                 create<MavenPublication>("mavenJava") {
