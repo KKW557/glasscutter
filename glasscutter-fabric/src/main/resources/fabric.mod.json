@@ -10,7 +10,7 @@
   "contact": {
     "sources": "https://github.com/KKW557/glasscutter",
     "issues": "https://github.com/KKW557/glasscutter/issues",
-    "homepage": "https://modrinth.com/mod/glasscuttermod"
+    "homepage": "https://modrinth.com/project/b225tuv2"
   },
   "license": "MIT",
   "icon": "pack.png",
@@ -24,7 +24,7 @@
     ]
   },
   "depends": {
-    "fabricloader": ">=${loader}",
+    "fabricloader": ">=${fabricloader}",
     "fabric-language-kotlin": "*",
     "fabric-api": "*",
     "minecraft": ">=${minecraft}"
