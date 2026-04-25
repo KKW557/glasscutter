@@ -9,7 +9,7 @@ dependencies {
     modImplementation(libs.fabric.loader)
     modImplementation(libs.fabric.kotlin)
     modImplementation(libs.fabric.api)
-    implementation(project(":glasscutter-common"))
+    implementation(project(path = ":glasscutter-common", configuration = "namedElements"))
     include(project(":glasscutter-common"))
 }
 
