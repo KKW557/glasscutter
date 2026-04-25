@@ -9,19 +9,7 @@ dependencies {
     implementation(libs.fabric.kotlin)
     implementation(libs.fabric.api)
     implementation(project(":glasscutter-common"))
-}
-
-loom {
-    sourceSets {
-        main {
-            kotlin {
-                srcDir(project(":glasscutter-common").sourceSets.main.get().kotlin.srcDirs)
-            }
-            resources {
-                srcDir(project(":glasscutter-common").sourceSets.main.get().resources.srcDirs)
-            }
-        }
-    }
+    include(project(":glasscutter-common"))
 }
 
 tasks.processResources {
@@ -29,13 +17,13 @@ tasks.processResources {
 
     inputs.property("version", project.version)
     inputs.property("minecraft", libs.versions.minecraft.get())
-    inputs.property("loader", libs.versions.fabric.loader.get())
+    inputs.property("fabricloader", libs.versions.fabric.loader.get())
 
     filesMatching("fabric.mod.json") {
         expand(
             "version" to version,
             "minecraft" to libs.versions.minecraft.get(),
-            "loader" to libs.versions.fabric.loader.get()
+            "fabricloader" to libs.versions.fabric.loader.get()
         )
     }
 }
